@@ -6,8 +6,8 @@ from google.genai import types
 st.set_page_config(page_title="Gemini Chatbot with System Prompt", page_icon="💬")
 
 # Header
-st.title("💬 Gemini Chatbot")
-st.caption("Customize the chatbot's behavior using the system prompt in the sidebar")
+st.title("💬 Satvik's Chatbot")
+st.caption("I built this chatbot as a part of Gen AI LaunchPad")
 
 # Initialize Gemini client
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
@@ -68,4 +68,4 @@ if prompt := st.chat_input("Type your message here..."):
     st.session_state.history.append({"role": "assistant", "content": reply})
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("❤️ Made by [Build Fast with AI](https://buildfastwithai.com)")
+st.sidebar.markdown("❤️ Made by [Satvik](https://www.linkedin.com/in/satvik-paramkusham/)")
